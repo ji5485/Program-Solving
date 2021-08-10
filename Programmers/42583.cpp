@@ -19,7 +19,6 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
         if (index < truck_weights.size() && weight >= truck_weights[index]) {
             weight -= truck_weights[index];
             bridges.push(make_pair(answer, truck_weights[index]));
-            printf("%d %d \n", answer, truck_weights[index]);
             index++;
         }
         
